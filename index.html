@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>LoveTest</title>
+    <link href="s40-theme/css/s40-theme.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="s40-theme/js/screensize.js"></script>
+    <script type="text/javascript">		
+		function refreshPageContent() {
+				// Add code for refreshing te page here...				
+		}		
+	</script>	
+    <script language="javascript" type="text/javascript" src="http://cdn2.inner-active.mobi/wv-js/inneractive_nokia_S40.js"></script>
+<script language="javascript" type="text/javascript">
+function iklan() {
+//Parameter Wajib
+inneractive.parameters.divID = "IklanS40"; // ID DIV Tampil Iklan
+inneractive.parameters.appID = "syntasium_Lovetest_Nokia"; // ID App di Inneractive
+//Menampilkan Iklan
+inneractive.displayInneractiveAd();
+}
+</script>
+</head>
+
+<body>
+    <div class="ui-page">
+        <!-- header -->
+        <div class="ui-header">
+             <div class="ui-title inline"><h2>LoveTest</h2></div><div class="refresh-icon inline"><a onclick="refreshPageContent();"><img alt="icon" src="s40-theme/images/refresh_40x40.png"/></a></div>
+        </div>
+        <div class="ui-content">
+ 			<script LANGUAGE="JavaScript">
+
+/*
+By Wee Family  psweesam@singnet.com.sg
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+function calc() {
+first = document.loveform.name1.value.toUpperCase();
+firstlength = document.loveform.name1.value.length;
+second = document.loveform.name2.value.toUpperCase();
+secondlength = document.loveform.name2.value.length;
+var LoveCount=0;
+
+for (Count=0; Count < firstlength; Count++) {
+
+
+
+letter1=first.substring(Count,Count+1);
+
+if (letter1=='L') LoveCount+=2; 
+if (letter1=='O') LoveCount+=2; 
+if (letter1=='V') LoveCount+=2;
+if (letter1=='E') LoveCount+=2; 
+if (letter1=='Y') LoveCount+=3; 
+if (letter1=='O') LoveCount+=1; 
+if (letter1=='U') LoveCount+=3;
+}
+
+
+for (Count=0; Count < secondlength; Count++) {
+letter2=second.substring(Count,Count+1);
+if (letter2=='L') LoveCount+=2;
+if (letter2=='O') LoveCount+=2; 
+if (letter2=='V') LoveCount+=2; 
+if (letter2=='E') LoveCount+=2;
+if (letter2=='Y') LoveCount+=3;
+if (letter2=='O') LoveCount+=1;
+if (letter2=='U') LoveCount+=3;
+}
+
+amount=0;
+
+if (LoveCount> 0) amount=  5-((firstlength+secondlength)/2)
+if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
+if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
+if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
+if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
+
+if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
+
+if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
+if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
+if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
+if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
+if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
+if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
+if (firstlength==0 || secondlength==0) amount= "Err";
+if (amount < 0) amount= 0;
+if (amount >99) amount=99;
+
+document.loveform.output.value=amount+"%";
+
+
+
+}
+
+
+</script>
+
+
+<center><table width=600 cellpadding=1 cellspacing=0 border=0><tr>
+<td align=center valign=top>
+</TD>
+</TR></TABLE>
+</CENTER> 
+
+<DIV align="center"><CENTER>
+<P><STRONG>The love Test</p>
+
+
+Test the love between two people by entering their names below and then calculate their compatibility.
+
+<FORM name="loveform">
+
+  <P><INPUT value="" name="name1" type="text" size="20">  + <INPUT
+
+  value="" name="name2" type="text" size="20"></P>
+  <P>  =
+  <body onload="javascript:iklan();">
+
+
+    <INPUT value name="output" type="text" size="6"> 
+    <BR>
+    <BR>
+<div id="IklanS40">Load Ads</div> 
+
+    <INPUT value="Calculate!" name="calculate" type="button" value="calculate"
+
+  onclick="calc()"> 
+</P>
+  </div>
+    </div>    
+</body>
+</html>
